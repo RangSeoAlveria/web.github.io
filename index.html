@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp2567472.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .welcome-section {
+            background-image: url('https://wallpapercave.com/wp/wp6387519.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .welcome-section h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-section p {
+            font-size: 1.5rem;
+        }
+
+        .welcome-section a {
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 10px; /* Ganti bottom dengan top */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            border: 2px solid #fff; /* Tambahkan bingkai pada setiap section */
+            border-radius: 10px; /* Tambahkan radius border untuk membuatnya lebih rapi */
+            background-color: rgba(255, 255, 255, 0.7); /* Tambahkan warna putih dengan opasitas 70% */
+        }
+
+        /* Gaya CSS untuk animasi api (jika Anda telah menambahkannya sebelumnya) */
+
+        /* Media Query untuk perangkat dengan lebar layar kurang dari atau sama dengan 768px */
+        @media screen and (max-width: 768px) {
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                top: 30px; /* Ganti bottom dengan top */
+            }
+
+            .welcome-section h1 {
+                font-size: 3rem;
+            }
+
+            .welcome-section p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portofolio Saya</h1>
+    </header>
+
+    <!-- Tampilan utama (welcome section) -->
+    <div class="welcome-section">
+        <!-- Gambar profil berbentuk bulat -->
+        <img src="https://i.pinimg.com/564x/c6/c6/20/c6c62011b930b5ed7569956d50d1c8a7.jpg" alt="Foto Profil" class="profile-image">
+        <h1>Selamat Datang di Portofolio Saya</h1>
+        <p>Saya adalah seorang web developer kreatif</p>
+        <a href="#about">Pelajari lebih lanjut</a>
+    </div>
+
+    <!-- Bagian "Profil" -->
+    <section id="profile">
+        <h2>Profil</h2>
+        <p>Imanuel Yovi Anggoro Putra</p>
+        <p>Berkacamata.</p>
+    </section>
+
+    <!-- Bagian "Tentang Saya" -->
+    <section id="about">
+        <h2>Tentang Saya</h2>
+        <p>Nama saya Imanuel Yovi Anggoro Putra.</p>
+        <p>Saya tinggal di Semarang.</p>
+        <p>Saya ingin menguasai bahasa pemrograman.</p>
+    </section>
+
+    <!-- Bagian "Proyek" -->
+    <section id="projects">
+        <h2>Proyek</h2>
+        <p>Membuat game simple menggunakan Greenfoot.</p>
+        <p>Membuat film pendek</p>
+    </section>
+
+    <!-- Bagian "Kontak" -->
+    <section id="contact">
+        <h2>Kontak</h2>
+        <p>Hubungi saya di <a href="mailto:imanuelyovisemarang@gmail.com">imanuelyovisemarang@gmail.com</a></p>
+    </section>
+</body>
+</html>
